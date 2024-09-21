@@ -1,112 +1,106 @@
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
-    background-image: url('assets-imágenes/fondo.jpg'); /* Imagen de fondo */
-    background-size: cover;
-    background-attachment: fixed;
+* {
     margin: 0;
     padding: 0;
-    color: #333;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0e0e0;
 }
 
 header {
     background-color: #333;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    padding: 10px 0;
 }
 
-#logo {
+.logo img {
     width: 150px;
+    display: block;
+    margin: 0 auto;
 }
 
-nav a {
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
     color: white;
-    margin: 0 10px;
     text-decoration: none;
     font-size: 18px;
 }
 
-nav a:hover {
-    text-decoration: underline;
-}
-
-/* Carreras Section */
 .carreras {
-    margin: 40px 0;
     text-align: center;
-    color: #333;
+    margin: 20px 0;
 }
 
 .carreras h1 {
-    font-size: 28px;
     margin-bottom: 20px;
 }
 
-.areas {
+.carreras-grid {
     display: flex;
-    justify-content: space-around;
-    margin: 20px auto;
-    width: 80%;
+    justify-content: center;
+    gap: 20px;
 }
 
-.area-academica, .area-industrial {
-    width: 40%;
+.carrera {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-.area-academica img, .area-industrial img {
+.carrera img {
     width: 100%;
-    border: 2px solid #333;
+    height: auto;
 }
 
-.area-academica p, .area-industrial p {
-    text-align: center;
-    font-weight: bold;
-    margin-top: 10px;
-}
-
-/* Matrícula Section */
 .matricula {
-    margin: 40px 0;
     text-align: center;
+    margin: 20px 0;
 }
 
 .matricula img {
-    width: 70%;
-    border: 2px solid #333;
+    width: 100%;
+    max-width: 700px;
+    height: auto;
 }
 
-#matricula-texto {
-    font-size: 24px;
+.tabla-estudiantes {
+    width: 80%;
+    margin: 0 auto;
     margin-top: 20px;
 }
 
-/* Tabla de Estudiantes */
-.tabla-estudiantes {
-    margin: 20px auto;
-    text-align: center;
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
 }
 
-table {
-    width: 80%;
-    margin: 0 auto;
-    border-collapse: collapse;
-    background-color: #fff;
-    opacity: 0.9; /* Fondo translúcido */
+table, th, td {
+    border: 1px solid black;
 }
 
 th, td {
     padding: 10px;
     text-align: center;
-    border: 1px solid #333;
 }
 
-th {
-    background-color: #4CAF50;
+footer {
+    background-color: #333;
     color: white;
-}
-
-td {
-    background-color: #f2f2f2;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
 }
