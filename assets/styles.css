@@ -1,15 +1,17 @@
 /* General Styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    text-align: center;
+    background-image: url('assets-imágenes/fondo.jpg'); /* Imagen de fondo */
+    background-size: cover;
+    background-attachment: fixed;
     margin: 0;
     padding: 0;
+    color: #333;
 }
 
 header {
     background-color: #333;
-    padding: 20px;
+    padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -21,7 +23,7 @@ header {
 
 nav a {
     color: white;
-    margin: 0 15px;
+    margin: 0 10px;
     text-decoration: none;
     font-size: 18px;
 }
@@ -32,18 +34,21 @@ nav a:hover {
 
 /* Carreras Section */
 .carreras {
-    padding: 20px;
+    margin: 40px 0;
+    text-align: center;
+    color: #333;
 }
 
 .carreras h1 {
-    color: #333;
-    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
 }
 
 .areas {
     display: flex;
     justify-content: space-around;
-    margin-top: 20px;
+    margin: 20px auto;
+    width: 80%;
 }
 
 .area-academica, .area-industrial {
@@ -64,22 +69,31 @@ nav a:hover {
 /* Matrícula Section */
 .matricula {
     margin: 40px 0;
+    text-align: center;
 }
 
 .matricula img {
-    width: 80%;
+    width: 70%;
     border: 2px solid #333;
+}
+
+#matricula-texto {
+    font-size: 24px;
+    margin-top: 20px;
 }
 
 /* Tabla de Estudiantes */
 .tabla-estudiantes {
-    margin: 20px;
+    margin: 20px auto;
+    text-align: center;
 }
 
 table {
     width: 80%;
     margin: 0 auto;
     border-collapse: collapse;
+    background-color: #fff;
+    opacity: 0.9; /* Fondo translúcido */
 }
 
 th, td {
