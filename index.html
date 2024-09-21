@@ -3,90 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página CFT Estatal</title>
-    <link rel="stylesheet" href="assets/assets-styles.css">
+    <title>CFT Estatal - Carreras</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    <!-- Encabezado con logo -->
     <header>
-        <img src="assets-imágenes/logo_cft.PNG" alt="Logo CFT Estatal" id="logo">
+        <div class="logo">
+            <img src="logo_cft.PNG" alt="CFT Estatal">
+        </div>
         <nav>
-            <a href="#">Inicio</a>
-            <a href="#">Quiénes Somos</a>
-            <a href="#">Carreras</a>
-            <a href="#">Vinculación</a>
-            <a href="#">Admisión</a>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Quiénes Somos</a></li>
+                <li><a href="#">Carreras</a></li>
+                <li><a href="#">Vinculación</a></li>
+                <li><a href="#">Admisión</a></li>
+            </ul>
         </nav>
     </header>
 
-    <!-- Sección de Carreras -->
-    <section class="carreras">
-        <h1>Carreras</h1>
-        <div class="areas">
-            <div class="area-academica">
-                <img src="assets-imágenes/area_academica.PNG" alt="Área Académica">
-                <p>Área Académica de Electricidad y Mecánica</p>
+    <main>
+        <section class="carreras">
+            <h1>Carreras</h1>
+            <div class="carreras-grid">
+                <div class="carrera">
+                    <img src="area_academica.PNG" alt="Área Académica de Electricidad y Mecanización">
+                    <p><a href="#">Área Académica de Electricidad y Mecanización</a></p>
+                    <p>Técnico de Nivel Superior en Electricidad y Electrónica</p>
+                    <p>Técnico de Nivel Superior en Mantenimiento Electromecánico</p>
+                </div>
+                <div class="carrera">
+                    <img src="area_industrial.PNG" alt="Área Académica de Ingeniería Industrial">
+                    <p><a href="#">Área Académica de Ingeniería Industrial</a></p>
+                    <p>Técnico de Nivel Superior en Procesos Industriales Mención Gestión de la Producción</p>
+                    <p>Técnico de Nivel Superior en Logística</p>
+                </div>
             </div>
-            <div class="area-industrial">
-                <img src="assets-imágenes/area_industrial.PNG" alt="Área Industrial">
-                <p>Área Académica de Ingeniería Industrial</p>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Sección de Matrícula -->
-    <section class="matricula">
-        <img src="assets-imágenes/matricula.PNG" alt="Matrícula con nosotros" id="matricula-img">
-        <p id="matricula-texto">¡No lo dudes! Matricúlate con nosotros ahora.</p>
-    </section>
+        <section class="matricula">
+            <img src="matricula.PNG" alt="Matricúlate con Nosotros">
+        </section>
 
-    <!-- Tabla de estudiantes -->
-    <section class="tabla-estudiantes">
-        <h1>Tabla de Estudiantes</h1>
-        <table id="tabla-estudiantes" border="1">
-            <tr>
-                <th>Nombre</th>
-                <th>Apellido</th>
-                <th>Edad</th>
-                <th>Carrera</th>
-            </tr>
-            <tr>
-                <td>Juan</td>
-                <td>Pérez</td>
-                <td>21</td>
-                <td>Electricidad</td>
-            </tr>
-            <tr>
-                <td>María</td>
-                <td>Gómez</td>
-                <td>23</td>
-                <td>Ingeniería Industrial</td>
-            </tr>
-        </table>
-    </section>
+        <section class="tabla-estudiantes">
+            <h2>Tabla de estudiantes</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Carrera</th>
+                        <th>Año</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Juan</td>
+                        <td>Pérez</td>
+                        <td>Electricidad</td>
+                        <td>2024</td>
+                    </tr>
+                    <!-- Más filas de estudiantes -->
+                </tbody>
+            </table>
+        </section>
+    </main>
 
-    <!-- Script de JavaScript -->
-    <script>
-        // Cambiar color de fondo de la tabla al pasar el cursor por encima
-        const tabla = document.getElementById('tabla-estudiantes');
-
-        tabla.addEventListener('mouseover', function() {
-            tabla.style.backgroundColor = '#e0f7fa';
-        });
-
-        tabla.addEventListener('mouseout', function() {
-            tabla.style.backgroundColor = '';
-        });
-
-        // Cambiar el texto de la matrícula al hacer clic en la imagen
-        const matriculaImg = document.getElementById('matricula-img');
-        const matriculaTexto = document.getElementById('matricula-texto');
-
-        matriculaImg.addEventListener('click', function() {
-            matriculaTexto.textContent = '¡Gracias por mostrar interés en matricularte!';
-        });
-    </script>
-
+    <footer>
+        <p>&copy; 2024 CFT Estatal. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
