@@ -37,14 +37,13 @@
 
     <!-- Sección de Matrícula -->
     <section class="matricula">
-        <img src="assets-imágenes/matricula.PNG" alt="Matrícula con nosotros" id="matricula-img">
-        <p id="matricula-texto">¡No lo dudes! Matricúlate con nosotros ahora.</p>
+        <img src="assets-imágenes/matricula.PNG" alt="Matrícula con nosotros">
     </section>
 
     <!-- Tabla de estudiantes -->
     <section class="tabla-estudiantes">
         <h1>Tabla de Estudiantes</h1>
-        <table id="tabla-estudiantes" border="1">
+        <table border="1">
             <tr>
                 <th>Nombre</th>
                 <th>Apellido</th>
@@ -65,28 +64,6 @@
             </tr>
         </table>
     </section>
-
-    <!-- Script de JavaScript -->
-    <script>
-        // Cambiar color de fondo de la tabla al pasar el cursor por encima
-        const tabla = document.getElementById('tabla-estudiantes');
-
-        tabla.addEventListener('mouseover', function() {
-            tabla.style.backgroundColor = '#e0f7fa';
-        });
-
-        tabla.addEventListener('mouseout', function() {
-            tabla.style.backgroundColor = '';
-        });
-
-        // Cambiar el texto de la matrícula al hacer clic en la imagen
-        const matriculaImg = document.getElementById('matricula-img');
-        const matriculaTexto = document.getElementById('matricula-texto');
-
-        matriculaImg.addEventListener('click', function() {
-            matriculaTexto.textContent = '¡Gracias por mostrar interés en matricularte!';
-        });
-    </script>
 
 </body>
 </html>
