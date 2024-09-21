@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página CFT Estatal</title>
+    <link rel="stylesheet" href="assets-styles.css">
+</head>
+<body>
+
+    <!-- Encabezado con logo -->
+    <header>
+        <img src="assets-imágenes/logo_cft.PNG" alt="Logo CFT Estatal" id="logo">
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#">Quiénes Somos</a>
+            <a href="#">Carreras</a>
+            <a href="#">Vinculación</a>
+            <a href="#">Admision</a>
+        </nav>
+    </header>
+
+    <!-- Sección de Carreras -->
+    <section class="carreras">
+        <h1>Carreras</h1>
+        <div class="areas">
+            <div class="area-academica">
+                <img src="assets-imágenes/area_academica.PNG" alt="Área Académica">
+                <p>Área Académica de Electricidad y Mecánica</p>
+            </div>
+            <div class="area-industrial">
+                <img src="assets-imágenes/area_industrial.PNG" alt="Área Industrial">
+                <p>Área Académica de Ingeniería Industrial</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Matrícula -->
+    <section class="matricula">
+        <img src="assets-imágenes/matricula.PNG" alt="Matrícula con nosotros" id="matricula-img">
+        <p id="matricula-texto">¡No lo dudes! Matricúlate con nosotros ahora.</p>
+    </section>
+
+    <!-- Tabla de estudiantes -->
+    <section class="tabla-estudiantes">
+        <h1>Tabla de Estudiantes</h1>
+        <table id="tabla-estudiantes" border="1">
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Edad</th>
+                <th>Carrera</th>
+            </tr>
+            <tr>
+                <td>Juan</td>
+                <td>Pérez</td>
+                <td>21</td>
+                <td>Electricidad</td>
+            </tr>
+            <tr>
+                <td>María</td>
+                <td>Gómez</td>
+                <td>23</td>
+                <td>Ingeniería Industrial</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Script de JavaScript -->
+    <script>
+        // Cambiar color de fondo de la tabla al pasar el cursor por encima
+        const tabla = document.getElementById('tabla-estudiantes');
+
+        tabla.addEventListener('mouseover', function() {
+            tabla.style.backgroundColor = '#e0f7fa';
+        });
+
+        tabla.addEventListener('mouseout', function() {
+            tabla.style.backgroundColor = '';
+        });
+
+        // Cambiar el texto de la matrícula al hacer clic en la imagen
+        const matriculaImg = document.getElementById('matricula-img');
+        const matriculaTexto = document.getElementById('matricula-texto');
+
+        matriculaImg.addEventListener('click', function() {
+            matriculaTexto.textContent = '¡Gracias por mostrar interés en matricularte!';
+        });
+    </script>
+
+</body>
+</html>
