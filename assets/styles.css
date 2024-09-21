@@ -1,0 +1,98 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    width: 150px;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Carreras Section */
+.carreras {
+    padding: 20px;
+}
+
+.carreras h1 {
+    color: #333;
+    text-align: center;
+}
+
+.areas {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.area-academica, .area-industrial {
+    width: 40%;
+}
+
+.area-academica img, .area-industrial img {
+    width: 100%;
+    border: 2px solid #333;
+}
+
+.area-academica p, .area-industrial p {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Matrícula Section */
+.matricula {
+    margin: 40px 0;
+}
+
+.matricula img {
+    width: 80%;
+    border: 2px solid #333;
+}
+
+/* Tabla de Estudiantes */
+.tabla-estudiantes {
+    margin: 20px;
+}
+
+table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #333;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+td {
+    background-color: #f2f2f2;
+}
