@@ -13,13 +13,16 @@ body {
 .container-header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding: 10px 20px;
     border: 2px solid #f0e5d6; /* Borde del cuadro alrededor del menú */
+    width: 80%; /* Ajustar al centro */
+    margin: 0 auto;
 }
 
 .logo img {
     width: 150px;
+    margin-right: 20px; /* Espacio entre logo y menú */
 }
 
 nav ul {
@@ -36,12 +39,6 @@ nav ul li a {
     text-decoration: none;
     font-size: 18px;
     padding: 10px;
-    border: 1px solid #f0e5d6; /* Borde alrededor de las casillas del menú */
-    transition: background-color 0.3s;
-}
-
-nav ul li a:hover {
-    background-color: #333; /* Cambio de color al pasar el cursor */
 }
 
 .carreras {
@@ -61,12 +58,10 @@ nav ul li a:hover {
 }
 
 .carrera {
-    background-color: #333;
     padding: 15px;
     border-radius: 8px;
     width: 70%;
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 .carrera img {
@@ -94,8 +89,8 @@ nav ul li a:hover {
 table {
     width: 100%;
     border-collapse: collapse;
-    background-color: #333;
-    color: #f0e5d6;
+    background-color: #333; /* Fondo de la tabla */
+    color: #f0e5d6; /* Texto de la tabla */
 }
 
 table, th, td {
