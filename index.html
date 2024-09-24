@@ -3,72 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CFT Estatal - Carreras</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets-styles.css">
+    <title>Página con Imágenes</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        img {
+            border: 2px solid #ccc;
+            width: 300px;
+            margin: 10px;
+        }
+
+        a {
+            display: block;
+            margin-top: 20px;
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        table {
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+
+        td, th {
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <div class="container-header">
-            <div class="logo">
-                <img src="logo_cft.png" alt="CFT Estatal">
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Quiénes Somos</a></li>
-                    <li><a href="#">Carreras</a></li>
-                    <li><a href="#">Vinculación</a></li>
-                    <li><a href="#">Admisión</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <h1>Bienvenido</h1>
 
-    <main>
-        <section class="carreras">
-            <h1>Carreras</h1>
-            <div class="carreras-grid">
-                <div class="carrera">
-                    <img src="area_academica.PNG" alt="Área Académica de Electricidad y Mecanización">
-                    <p><a href="#">Área Académica de Electricidad y Mecanización</a></p>
-                    <p>Técnico de Nivel Superior en Electricidad y Electrónica</p>
-                    <p>Técnico de Nivel Superior en Mantenimiento Electromecánico</p>
-                </div>
-                <div class="carrera">
-                    <img src="area_industrial.PNG" alt="Área Académica de Ingeniería Industrial">
-                    <p><a href="#">Área Académica de Ingeniería Industrial</a></p>
-                    <p>Técnico de Nivel Superior en Procesos Industriales Mención Gestión de la Producción</p>
-                    <p>Técnico de Nivel Superior en Logística</p>
-                </div>
-            </div>
-        </section>
+    <!-- Imágenes -->
+    <img src="logo_cft.PNG" alt="Logo CFT">
+    <img src="area_academica.PNG" alt="Área Académica">
+    <img src="area_industrial.PNG" alt="Área Industrial">
+    <img src="matricula.PNG" alt="Matrícula">
 
-        <section class="matricula">
-            <img src="matricula.PNG" alt="Matricúlate con Nosotros">
-        </section>
+    <!-- Tabla -->
+    <table>
+        <tr>
+            <th>Descripción</th>
+            <th>Imagen</th>
+        </tr>
+        <tr>
+            <td>Logo del CFT</td>
+            <td><img src="logo_cft.PNG" alt="Logo CFT" width="100"></td>
+        </tr>
+        <tr>
+            <td>Área Académica</td>
+            <td><img src="area_academica.PNG" alt="Área Académica" width="100"></td>
+        </tr>
+        <tr>
+            <td>Área Industrial</td>
+            <td><img src="area_industrial.PNG" alt="Área Industrial" width="100"></td>
+        </tr>
+        <tr>
+            <td>Matrícula</td>
+            <td><img src="matricula.PNG" alt="Matrícula" width="100"></td>
+        </tr>
+    </table>
 
-        <section class="tabla-estudiantes">
-            <h2>Tabla de estudiantes</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Nombre</th>
-                        <th>Apellido</th>
-                        <th>Carrera</th>
-                        <th>Año</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Juan</td>
-                        <td>Pérez</td>
-                        <td>Electricidad</td>
-                        <td>2024</td>
-                    </tr>
-                    <!-- Más filas de estudiantes -->
-                </tbody>
-            </table>
-        </section>
-    </main>
+    <!-- Enlace -->
+    <a href="https://github.com/">Visitar GitHub</a>
 </body>
 </html>
